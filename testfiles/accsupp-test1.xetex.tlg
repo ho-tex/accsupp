@@ -20,9 +20,10 @@ Package ifluatex Info: LuaTeX not detected.
 Package: ifpdf ....-..-.. v... Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 ))
 (../ifxetex.sty
 Package: ifxetex ....-..-.. v... Provides ifxetex conditional
@@ -42,6 +43,6 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(../accsupp-pdftex.def
-File: accsupp-pdftex.def ....-..-.. v... accsupp driver for pdfTeX (HO)
+(../accsupp-dvipdfm.def
+File: accsupp-dvipdfm.def ....-..-.. v... accsupp driver for dvipdfm (HO)
 ))
