@@ -1,13 +1,13 @@
 % \iffalse meta-comment
 %
 % File: accsupp.dtx
-% Version: 2018/03/28 v0.5
+% Version: 2019/12/15 v0.6
 % Info: Accessibility support by marked content
 %
 % Copyright (C)
 %    2007, 2010 Heiko Oberdiek
 %    2016-2019 Oberdiek Package Support Group
-%    https://github.com/ho-tex/oberdiek/issues
+%    https://github.com/ho-tex/accsupp/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -23,7 +23,7 @@
 %
 % The Current Maintainers of this work are
 % Heiko Oberdiek and the Oberdiek Package Support Group
-% https://github.com/ho-tex/oberdiek/issues
+% https://github.com/ho-tex/accsupp/issues
 %
 % This work consists of the main source file accsupp.dtx
 % and the derived files
@@ -34,8 +34,8 @@
 %    accsupp-test1.tex.
 %
 % Distribution:
-%    CTAN:macros/latex/contrib/oberdiek/accsupp.dtx
-%    CTAN:macros/latex/contrib/oberdiek/accsupp.pdf
+%    CTAN:macros/latex/contrib/accsupp/accsupp.dtx
+%    CTAN:macros/latex/contrib/accsupp/accsupp.pdf
 %
 % Unpacking:
 %    (a) If accsupp.ins is present:
@@ -64,15 +64,15 @@
 %       pdflatex accsupp.dtx
 %
 % Installation:
-%    TDS:tex/latex/oberdiek/accsupp.sty
-%    TDS:tex/latex/oberdiek/accsupp-pdftex.def
-%    TDS:tex/latex/oberdiek/accsupp-luatex.def
-%    TDS:tex/latex/oberdiek/accsupp-dvipdfm.def
-%    TDS:tex/latex/oberdiek/accsupp-dvips.def
-%    TDS:doc/latex/oberdiek/accsupp.pdf
-%    TDS:doc/latex/oberdiek/accsupp-example1.tex
-%    TDS:doc/latex/oberdiek/accsupp-example2.tex
-%    TDS:source/latex/oberdiek/accsupp.dtx
+%    TDS:tex/latex/accsupp/accsupp.sty
+%    TDS:tex/latex/accsupp/accsupp-pdftex.def
+%    TDS:tex/latex/accsupp/accsupp-luatex.def
+%    TDS:tex/latex/accsupp/accsupp-dvipdfm.def
+%    TDS:tex/latex/accsupp/accsupp-dvips.def
+%    TDS:doc/latex/accsupp/accsupp.pdf
+%    TDS:doc/latex/accsupp/accsupp-example1.tex
+%    TDS:doc/latex/accsupp/accsupp-example2.tex
+%    TDS:source/latex/accsupp/accsupp.dtx
 %
 %<*ignore>
 \begingroup
@@ -89,7 +89,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: accsupp 2018/03/28 v0.5 Accessibility support by marked content (HO)}
+\Msg{* Package: accsupp 2019/12/15 v0.6 Accessibility support by marked content (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -101,7 +101,7 @@
 This is a generated file.
 
 Project: accsupp
-Version: 2018/03/28 v0.5
+Version: 2019/12/15 v0.6
 
 Copyright (C)
    2007, 2010 Heiko Oberdiek
@@ -121,7 +121,7 @@ This work has the LPPL maintenance status "maintained".
 
 The Current Maintainers of this work are
 Heiko Oberdiek and the Oberdiek Package Support Group
-https://github.com/ho-tex/oberdiek/issues
+https://github.com/ho-tex/accsupp/issues
 
 
 This work consists of the main source file accsupp.dtx
@@ -138,17 +138,15 @@ and the derived files
 \generate{%
   \file{accsupp.ins}{\from{accsupp.dtx}{install}}%
   \file{accsupp.drv}{\from{accsupp.dtx}{driver}}%
-  \usedir{tex/latex/oberdiek}%
+  \usedir{tex/latex/accsupp}%
   \file{accsupp.sty}{\from{accsupp.dtx}{package}}%
   \file{accsupp-pdftex.def}{\from{accsupp.dtx}{pdftex}}%
   \file{accsupp-luatex.def}{\from{accsupp.dtx}{luatex}}%
   \file{accsupp-dvipdfm.def}{\from{accsupp.dtx}{dvipdfm}}%
   \file{accsupp-dvips.def}{\from{accsupp.dtx}{dvips}}%
-  \usedir{doc/latex/oberdiek}%
+  \usedir{doc/latex/accsupp}%
   \file{accsupp-example1.tex}{\from{accsupp.dtx}{example1}}%
   \file{accsupp-example2.tex}{\from{accsupp.dtx}{example2}}%
-%  \usedir{doc/latex/oberdiek/test}%
-%  \file{accsupp-test1.tex}{\from{accsupp.dtx}{test1}}%
 }
 
 \catcode32=13\relax% active space
@@ -176,7 +174,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp.drv}%
-  [2018/03/28 v0.5 Accessibility support by marked content (HO)]%
+  [2019/12/15 v0.6 Accessibility support by marked content (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -190,9 +188,9 @@ and the derived files
 % \GetFileInfo{accsupp.drv}
 %
 % \title{The \xpackage{accsupp} package}
-% \date{2018/03/28 v0.5}
+% \date{2019/12/15 v0.6}
 % \author{Heiko Oberdiek\thanks
-% {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
+% {Please report any issues at \url{https://github.com/ho-tex/accsupp/issues}}}
 %
 % \maketitle
 %
@@ -509,7 +507,7 @@ A\notparallel B
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{accsupp}%
-  [2018/03/28 v0.5 Accessibility support by marked content (HO)]
+  [2019/12/15 v0.6 Accessibility support by marked content (HO)]
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -802,7 +800,7 @@ ed as
 %<*pdftex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-pdftex.def}%
-  [2018/03/28 v0.5 accsupp driver for pdfTeX (HO)]%
+  [2019/12/15 v0.6 accsupp driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -823,7 +821,7 @@ ed as
 %<*luatex>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-luatex.def}%
-  [2018/03/28 v0.5 accsupp driver for pdfTeX (HO)]%
+  [2019/12/15 v0.6 accsupp driver for pdfTeX (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -845,7 +843,7 @@ ed as
 %<*dvipdfm>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvipdfm.def}%
-  [2018/03/28 v0.5 accsupp driver for dvipdfm (HO)]%
+  [2019/12/15 v0.6 accsupp driver for dvipdfm (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -866,7 +864,7 @@ ed as
 %<*dvips>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{accsupp-dvips.def}%
-  [2018/03/28 v0.5 accsupp driver for dvips (HO)]%
+  [2019/12/15 v0.6 accsupp driver for dvips (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -887,17 +885,17 @@ ed as
 % \paragraph{Package.} This package is available on
 % CTAN\footnote{\CTANpkg{accsupp}}:
 % \begin{description}
-% \item[\CTAN{macros/latex/contrib/oberdiek/accsupp.dtx}] The source file.
-% \item[\CTAN{macros/latex/contrib/oberdiek/accsupp.pdf}] Documentation.
+% \item[\CTAN{macros/latex/contrib/accsupp/accsupp.dtx}] The source file.
+% \item[\CTAN{macros/latex/contrib/accsupp/accsupp.pdf}] Documentation.
 % \end{description}
 %
 %
-% \paragraph{Bundle.} All the packages of the bundle `oberdiek'
+% \paragraph{Bundle.} All the packages of the bundle `accsupp'
 % are also available in a TDS compliant ZIP archive. There
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
-% \item[\CTANinstall{install/macros/latex/contrib/oberdiek.tds.zip}]
+% \item[\CTANinstall{install/macros/latex/contrib/accsupp.tds.zip}]
 % \end{description}
 % \emph{TDS} refers to the standard ``A Directory Structure
 % for \TeX\ Files'' (\CTANpkg{tds}). Directories
@@ -905,11 +903,11 @@ ed as
 %
 % \subsection{Bundle installation}
 %
-% \paragraph{Unpacking.} Unpack the \xfile{oberdiek.tds.zip} in the
+% \paragraph{Unpacking.} Unpack the \xfile{accsupp.tds.zip} in the
 % TDS tree (also known as \xfile{texmf} tree) of your choice.
 % Example (linux):
 % \begin{quote}
-%   |unzip oberdiek.tds.zip -d ~/texmf|
+%   |unzip accsupp.tds.zip -d ~/texmf|
 % \end{quote}
 %
 % \subsection{Package installation}
@@ -927,15 +925,15 @@ ed as
 % \begin{quote}
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
-%   accsupp.sty & tex/latex/oberdiek/accsupp.sty\\
-%   accsupp-pdftex.def & tex/latex/oberdiek/accsupp-pdftex.def\\
-%   accsupp-luatex.def & tex/latex/oberdiek/accsupp-luatex.def\\
-%   accsupp-dvipdfm.def & tex/latex/oberdiek/accsupp-dvipdfm.def\\
-%   accsupp-dvips.def & tex/latex/oberdiek/accsupp-dvips.def\\
-%   accsupp.pdf & doc/latex/oberdiek/accsupp.pdf\\
-%   accsupp-example1.tex & doc/latex/oberdiek/accsupp-example1.tex\\
-%   accsupp-example2.tex & doc/latex/oberdiek/accsupp-example2.tex\\
-%   accsupp.dtx & source/latex/oberdiek/accsupp.dtx\\
+%   accsupp.sty & tex/latex/accsupp/accsupp.sty\\
+%   accsupp-pdftex.def & tex/latex/accsupp/accsupp-pdftex.def\\
+%   accsupp-luatex.def & tex/latex/accsupp/accsupp-luatex.def\\
+%   accsupp-dvipdfm.def & tex/latex/accsupp/accsupp-dvipdfm.def\\
+%   accsupp-dvips.def & tex/latex/accsupp/accsupp-dvips.def\\
+%   accsupp.pdf & doc/latex/accsupp/accsupp.pdf\\
+%   accsupp-example1.tex & doc/latex/accsupp/accsupp-example1.tex\\
+%   accsupp-example2.tex & doc/latex/accsupp/accsupp-example2.tex\\
+%   accsupp.dtx & source/latex/accsupp/accsupp.dtx\\
 % \end{tabular}^^A
 % }^^A
 % \sbox0{\t}^^A
@@ -1077,6 +1075,10 @@ ed as
 %   \begin{Version}{2018/03/28 v0.5}
 %   \item
 %     LuaTeX support added.
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v0.6}
+%   \item
+%     Documentation updates.
 %   \end{Version}
 % \end{History}
 %
