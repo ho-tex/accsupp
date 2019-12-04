@@ -6,7 +6,7 @@ module = "accsupp"
 installfiles = {
 '*.sty',
 '*.dtx','*.pdf',
-'*.def'
+'*.def','*.tex'
 }
 
 
